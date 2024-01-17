@@ -4,7 +4,8 @@ const port = 9000;
 function behavior(req, res) {
   if (req.method === "GET" && req.url === "/books") {
     res.write(`you are request ${req.url} endpoint with the ${req.method}`);
-  } else if (req.method === "PUT" && req.url === "/books") {
+  } 
+  else if (req.method === "PUT" && req.url === "/books") {
     res.write(`you are request ${req.url} endpoint with the ${req.method}`);
   } else if (req.method === "DELETE" && req.url === "/books") {
     res.write(`you are request ${req.url} endpoint with the ${req.method}`);
